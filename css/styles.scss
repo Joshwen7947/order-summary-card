@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$paleBlue: hsl(225, 100%, 98%);
+$desatBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+//
+$darkerPaleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	background-color: $darkerPaleBlue;
+	background-image: url(/images/pattern-background-desktop.svg);
+}
+
+.card {
+	height: 600px;
+	width: 450px;
+	border-radius: 15px;
+	background-color: white;
+	text-align: center;
+	margin: 50px auto;
+	.top {
+		img {
+			border-radius: 15px 15px 0 0;
+		}
+	}
+	.bottom {
+		width: 70%;
+		margin: auto;
+		h1 {
+			padding: 20px;
+		}
+		.info-p {
+			color: $desatBlue;
+		}
+		.annual {
+			background-color: $paleBlue;
+			height: 80px;
+			margin-top: 25px;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.img {
+				width: 25%;
+			}
+			.annual-info {
+				width: 50%;
+				padding: 0 10px;
+				color: $darkBlue;
+				.price {
+					color: $desatBlue;
+				}
+			}
+			.change {
+				width: 25%;
+				color: $brightBlue;
+				text-decoration: underline;
+			}
+			.change:hover {
+				cursor: pointer;
+			}
+		}
+		.btns {
+			display: flex;
+			flex-direction: column;
+			padding: 15px;
+			button {
+				padding: 12px;
+				border: none;
+				border-radius: 10px;
+			}
+			.payment {
+				background-color: $brightBlue;
+				color: white;
+				font-weight: bold;
+			}
+			.payment:hover {
+				cursor: pointer;
+				opacity: 0.8;
+			}
+			.cancelorder {
+				padding: 15px;
+				font-weight: bold;
+				cursor: pointer;
+				color: $desatBlue;
+			}
+			.cancelorder:hover {
+				color: black;
+				cursor: pointer;
+			}
+		}
+	}
+}

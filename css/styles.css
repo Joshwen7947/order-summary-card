@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: #e0e8ff;
+  background-image: url(/images/pattern-background-desktop.svg);
+}
+
+.card {
+  height: 600px;
+  width: 450px;
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.card .top img {
+  border-radius: 15px 15px 0 0;
+}
+
+.card .bottom {
+  width: 70%;
+  margin: auto;
+}
+
+.card .bottom h1 {
+  padding: 20px;
+}
+
+.card .bottom .info-p {
+  color: #7280a7;
+}
+
+.card .bottom .annual {
+  background-color: #f5f7ff;
+  height: 80px;
+  margin-top: 25px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .bottom .annual .img {
+  width: 25%;
+}
+
+.card .bottom .annual .annual-info {
+  width: 50%;
+  padding: 0 10px;
+  color: #1f2f56;
+}
+
+.card .bottom .annual .annual-info .price {
+  color: #7280a7;
+}
+
+.card .bottom .annual .change {
+  width: 25%;
+  color: #3829e0;
+  text-decoration: underline;
+}
+
+.card .bottom .annual .change:hover {
+  cursor: pointer;
+}
+
+.card .bottom .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+.card .bottom .btns button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+}
+
+.card .bottom .btns .payment {
+  background-color: #3829e0;
+  color: white;
+  font-weight: bold;
+}
+
+.card .bottom .btns .payment:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.card .bottom .btns .cancelorder {
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #7280a7;
+}
+
+.card .bottom .btns .cancelorder:hover {
+  color: black;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
